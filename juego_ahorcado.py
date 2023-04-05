@@ -23,10 +23,16 @@ def palabra_aleatoria():
     return selected
 
 
+def imp_pal_oculta(pala1):
+    for i in range (len(pala1)):
+        print("-",end='') 
+
+
 
 def run():
     x = palabra_aleatoria()
     print(x)
+    imp_pal_oculta(x)
 
 
 if __name__ == "__main__":
