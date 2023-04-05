@@ -22,6 +22,14 @@ def palabra_aleatoria():
     selected = random.choice(palabras)
     return selected
 
+def adivina_la_letra(pal2):
+    pal2 = list(pal2)
+    while True:
+        caracter = input("Escribe una letra: ")
+        if caracter in pal2:
+            print("has adivinado la letra {caracter}")
+            break
+
 
 
 def run():
