@@ -41,6 +41,7 @@ def run():
     x = palabra_aleatoria()
     print(x)
     imp_pal_oculta(x)
+    print("Ten un buen día!")
 
 
 if __name__ == "__main__":
