@@ -28,8 +28,8 @@ def imp_pal_oculta(pala1):
         print("-",end='') 
 
 
-def adivina_la_letra(pal2):
-    pal2 = list(pal2)
+def adivina_la_letra(palabrota):
+    palabrota = list(palabrota)
     while True:
         caracter = input("Escribe una letra: ")
         if caracter in pal2:
