@@ -28,8 +28,13 @@ def imp_pal_oculta(pala1):
         print("-",end='') 
 
 
+<<<<<<< HEAD
 def adivina_la_letra(palabrita):
     palabrita = list(palabrita)
+=======
+def adivina_la_letra(palabrota):
+    palabrota = list(palabrota)
+>>>>>>> funciones
     while True:
         caracter = input("Escribe una letra: ")
         if caracter in pal2:
@@ -41,6 +46,7 @@ def run():
     x = palabra_aleatoria()
     print(x)
     imp_pal_oculta(x)
+    print("Ten un buen día!")
 
 
 if __name__ == "__main__":
