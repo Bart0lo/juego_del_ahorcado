@@ -23,10 +23,18 @@ def palabra_aleatoria():
     return selected
 
 
-def imp_pal_oculta(funciones):
-    for i in range (len(funciones)):
+def imp_pal_oculta(pala1):
+    for i in range (len(pala1)):
         print("-",end='') 
 
+
+def adivina_la_letra(pal2):
+    pal2 = list(pal2)
+    while True:
+        caracter = input("Escribe una letra: ")
+        if caracter in pal2:
+            print("has adivinado la letra {caracter}")
+            break
 
 
 def run():
