@@ -37,10 +37,11 @@ def adivina_la_letra():
 
 # Una función para verificar si la letra adivinada está en la palabra oculta y actualizar la palabra oculta con la letra adivinada si es el caso
 
-def verificar_letra(palabrita,palabra_original,caracter):
+def verificar_letra(palabrita,palabra_original):
     palabrita = list(palabrita)
     palabra_original = list(palabra_original)
     while palabrita != palabra_original:
+        caracter = adivina_la_letra()
         if caracter in palabra_original:
             ind = palabra_original.index(caracter)
             palabrita[ind] = caracter
@@ -49,9 +50,6 @@ def verificar_letra(palabrita,palabra_original,caracter):
 
 
 # Una función para dibujar una parte del cuerpo del ahorcado cada vez que el usuario adivina una letra incorrecta
-
-
-
 
 
 #La función principal/main
@@ -68,4 +66,3 @@ def run():
 
 if __name__ == "__main__":
     run()
-    
