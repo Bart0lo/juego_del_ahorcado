@@ -1,6 +1,8 @@
 # Programa para jugar al ahorcado. El objetivo del juego es adivinar una palabra oculta 
 # antes de que se dibuje una figura completa del ahorcado.
 
+#Importamos la libreria random para usarla en nuestra primera función
+
 
 import random
 
@@ -29,7 +31,7 @@ def imp_pal_oculta(pala1):
 
 
 def adivina_la_letra():
-    letra = input("Intenta adivinar una letra: "
+    letra = input("Intenta adivinar una letra: ")
     return letra
 
 
