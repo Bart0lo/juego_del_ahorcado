@@ -28,22 +28,28 @@ def imp_pal_oculta(pala1):
 # Una función para pedir al usuario que adivine una letra
 
 
-def adivina_la_letra(palabrita,palabra_original):
-    palabrita = list(palabrita)
-    palabra_original = list(palabra_original)
-    while True:
-        caracter = input("Escribe una letra: ")
-        if caracter in palabra_original:
-            ind = palabra_original.index(caracter)
-            
-            print("has adivinado la letra {caracter}") in on my de
-            break
+def adivina_la_letra():
+    letra = input("Intenta adivinar una letra: "
+    return letra
 
 
 # Una función para verificar si la letra adivinada está en la palabra oculta y actualizar la palabra oculta con la letra adivinada si es el caso
 
+def verificar_letra(palabrita,palabra_original,caracter):
+    palabrita = list(palabrita)
+    palabra_original = list(palabra_original)
+    while palabrita != palabra_original:
+        if caracter in palabra_original:
+            ind = palabra_original.index(caracter)
+            palabrita[ind] = caracter
+            print("has adivinado la letra {caracter}")
+        print(palabrita)
+
 
 # Una función para dibujar una parte del cuerpo del ahorcado cada vez que el usuario adivina una letra incorrecta
+
+
+
 
 
 #La función principal/main
