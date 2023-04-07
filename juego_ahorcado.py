@@ -53,7 +53,9 @@ def run():
     x = palabra_aleatoria()
     print(x)
     imp_pal_oculta(x)
-    print("Ten un buen día!")
+
+
+# Nos aseguramos de que el código se ejecute solo cuando se ejecuta el archivo Python directamente, y no cuando se importa desde otro archivo Python.
 
 
 if __name__ == "__main__":
