@@ -29,7 +29,6 @@ def imp_pal_oculta(pala1):
     return guiones
         
 
-
 # Una función para pedir al usuario que adivine una letra
 
 
@@ -40,17 +39,21 @@ def adivina_la_letra():
 
 # Una función para verificar si la letra adivinada está en la palabra oculta y actualizar la palabra oculta con la letra adivinada si es el caso
 
-def verificar_letra(palabrita,palabra_original):
-    palabrita = list(palabrita)
+
+def verificar_letra(palabra_original):
+    letras_adivinadas =  []
+    palabrita = list(imp_pal_oculta(palabra_original))
     palabra_original = list(palabra_original)
     caracter = adivina_la_letra()
     if caracter in palabra_original:
+        letras_adivinadas.append(caracter)
         ind = palabra_original.index(caracter)
         palabrita[ind] = caracter
-        print("has adivinado la letra {caracter}")
-        return palabrita
+        print(f"has adivinado la letra {caracter}")
     else: 
-        print("La letra {caracter} no está en la palabra")
+        print(f"La letra {caracter} no está en la palabra")
+    for  i in  palabrita:
+        print(i,end='')
 
 
 # Una función para dibujar una parte del cuerpo del ahorcado cada vez que el usuario adivina una letra incorrecta
@@ -62,7 +65,8 @@ def verificar_letra(palabrita,palabra_original):
 def run():
     x = palabra_aleatoria()
     y = imp_pal_oculta(x)
-    z  = verificar_letra(y, x)
+    while "_" in list(y) :
+        verificar_letra(x)
 
 
 # Nos aseguramos de que el código se ejecute solo cuando se ejecuta el archivo Python directamente, y no cuando se importa desde otro archivo Python.
