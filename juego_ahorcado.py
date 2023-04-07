@@ -1,16 +1,11 @@
 # Programa para jugar al ahorcado. El objetivo del juego es adivinar una palabra oculta 
-# antes de que se dibuje una figura completa del ahorcado. El programa podría tener las siguientes funciones:
+# antes de que se dibuje una figura completa del ahorcado.
+
+
+import random
+
 
 # Una función para seleccionar una palabra aleatoria de una lista predefinida
-# Una función para mostrar la palabra oculta, con cada letra representada por un guión bajo
-# Una función para pedir al usuario que adivine una letra
-# Una función para verificar si la letra adivinada está en la palabra oculta y actualizar la palabra oculta con la letra adivinada si es el caso
-# Una función para dibujar una parte del cuerpo del ahorcado cada vez que el usuario adivina una letra incorrecta
-# Para implementar este programa, podrías utilizar algunas estructuras básicas de Python, como las listas, las cadenas de texto, los 
-# condicionales y los bucles. 
-# También podrías utilizar la función input() para obtener la entrada del usuario y la función print() 
-# para mostrar el estado del juego en la pantalla.
-import random
 
 
 def palabra_aleatoria():
@@ -22,18 +17,36 @@ def palabra_aleatoria():
     return selected
 
 
+# Una función para mostrar la palabra oculta, con cada letra representada por un guión bajo
+
+
 def imp_pal_oculta(pala1):
     for i in range (len(pala1)):
         print("-",end='') 
 
 
-def adivina_la_letra(palabrita):
+# Una función para pedir al usuario que adivine una letra
+
+
+def adivina_la_letra(palabrita,palabra_original):
     palabrita = list(palabrita)
+    palabra_original = list(palabra_original)
     while True:
         caracter = input("Escribe una letra: ")
-        if caracter in pal2:
-            print("has adivinado la letra {caracter}")
+        if caracter in palabra_original:
+            ind = palabra_original.index(caracter)
+            
+            print("has adivinado la letra {caracter}") in on my de
             break
+
+
+# Una función para verificar si la letra adivinada está en la palabra oculta y actualizar la palabra oculta con la letra adivinada si es el caso
+
+
+# Una función para dibujar una parte del cuerpo del ahorcado cada vez que el usuario adivina una letra incorrecta
+
+
+#La función principal/main
 
 
 def run():
