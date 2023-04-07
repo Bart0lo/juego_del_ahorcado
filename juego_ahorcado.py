@@ -1,5 +1,4 @@
-# Una idea de proyecto en Python que no incluya librerías podría ser un 
-# programa para jugar al ahorcado. El objetivo del juego es adivinar una palabra oculta 
+# Programa para jugar al ahorcado. El objetivo del juego es adivinar una palabra oculta 
 # antes de que se dibuje una figura completa del ahorcado. El programa podría tener las siguientes funciones:
 
 # Una función para seleccionar una palabra aleatoria de una lista predefinida
