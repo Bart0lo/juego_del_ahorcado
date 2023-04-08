@@ -41,23 +41,79 @@ def adivina_la_letra():
 
 
 def verificar_letra(palabra_original):
-    letras_adivinadas =  []
     palabrita = list(imp_pal_oculta(palabra_original))
     palabra_original = list(palabra_original)
     caracter = adivina_la_letra()
     if caracter in palabra_original:
-        letras_adivinadas.append(caracter)
         ind = palabra_original.index(caracter)
         palabrita[ind] = caracter
         print(f"has adivinado la letra {caracter}")
+    for  i in  palabrita:
+        print(i,end='')
+        return palabrita
     else: 
         print(f"La letra {caracter} no está en la palabra")
     for  i in  palabrita:
         print(i,end='')
-
+        return False
+    
 
 # Una función para dibujar una parte del cuerpo del ahorcado cada vez que el usuario adivina una letra incorrecta
 
+
+def dibujar_ahorcado(vidas):
+
+if vidas == 6:
+    print("  ____")
+    print(" |    |")
+    print(" |")
+    print(" |")
+    print(" |")
+    print("_|_")
+elif vidas == 5:
+    print("  ____")
+    print(" |    |")
+    print(" |    O")
+    print(" |")
+    print(" |")
+    print("_|_")
+elif vidas == 4:
+    print("  ____")
+    print(" |    |")
+    print(" |    O")
+    print(" |    |")
+    print(" |")
+    print("_|_")
+elif vidas == 3:
+    print("  ____")
+    print(" |    |")
+    print(" |    O")
+    print(" |   /|")
+    print(" |")
+    print("_|_")
+elif vidas == 2:
+    print("  ____")
+    print(" |    |")
+    print(" |    O")
+    print(" |   /|\\")
+    print(" |")
+    print("_|_")
+elif vidas == 1:
+    print("  ____")
+    print(" |    |")
+    print(" |    O")
+    print(" |   /|\\")
+    print(" |   /")
+    print("_|_")
+elif vidas == 0:
+    print("  ____")
+    print(" |    |")
+    print(" |    O")
+    print(" |   /|\\")
+    print(" |   / \\")
+    print("_|_")
+    print("GAME OVER")
+    
 
 #La función principal/main
 
