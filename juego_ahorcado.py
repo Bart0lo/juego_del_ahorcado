@@ -55,7 +55,7 @@ def verificar_letra(palabrita,palabra_original):
 
 # Una función para dibujar una parte del cuerpo del ahorcado cada vez que el usuario adivina una letra incorrecta
 
-
+#YA lo hice
 #La función principal/main
 
 
