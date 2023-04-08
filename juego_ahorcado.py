@@ -62,57 +62,56 @@ def verificar_letra(palabra_original):
 
 
 def dibujar_ahorcado(vidas):
-
-if vidas == 6:
-    print("  ____")
-    print(" |    |")
-    print(" |")
-    print(" |")
-    print(" |")
-    print("_|_")
-elif vidas == 5:
-    print("  ____")
-    print(" |    |")
-    print(" |    O")
-    print(" |")
-    print(" |")
-    print("_|_")
-elif vidas == 4:
-    print("  ____")
-    print(" |    |")
-    print(" |    O")
-    print(" |    |")
-    print(" |")
-    print("_|_")
-elif vidas == 3:
-    print("  ____")
-    print(" |    |")
-    print(" |    O")
-    print(" |   /|")
-    print(" |")
-    print("_|_")
-elif vidas == 2:
-    print("  ____")
-    print(" |    |")
-    print(" |    O")
-    print(" |   /|\\")
-    print(" |")
-    print("_|_")
-elif vidas == 1:
-    print("  ____")
-    print(" |    |")
-    print(" |    O")
-    print(" |   /|\\")
-    print(" |   /")
-    print("_|_")
-elif vidas == 0:
-    print("  ____")
-    print(" |    |")
-    print(" |    O")
-    print(" |   /|\\")
-    print(" |   / \\")
-    print("_|_")
-    print("GAME OVER")
+    if vidas == 6:
+        print("  ____")
+        print(" |    |")
+        print(" |")
+        print(" |")
+        print(" |")
+        print("_|_")
+    elif vidas == 5:
+        print("  ____")
+        print(" |    |")
+        print(" |    O")
+        print(" |")
+        print(" |")
+        print("_|_")
+    elif vidas == 4:
+        print("  ____")
+        print(" |    |")
+        print(" |    O")
+        print(" |    |")
+        print(" |")
+        print("_|_")
+    elif vidas == 3:
+        print("  ____")
+        print(" |    |")
+        print(" |    O")
+        print(" |   /|")
+        print(" |")
+        print("_|_")
+    elif vidas == 2:
+        print("  ____")
+        print(" |    |")
+        print(" |    O")
+        print(" |   /|\\")
+        print(" |")
+        print("_|_")
+    elif vidas == 1:
+        print("  ____")
+        print(" |    |")
+        print(" |    O")
+        print(" |   /|\\")
+        print(" |   /")
+        print("_|_")
+    elif vidas == 0:
+        print("  ____")
+        print(" |    |")
+        print(" |    O")
+        print(" |   /|\\")
+        print(" |   / \\")
+        print("_|_")
+        print("GAME OVER")
     
 
 #La función principal/main
