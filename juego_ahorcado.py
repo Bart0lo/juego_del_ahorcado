@@ -64,8 +64,8 @@ def verificar_letra(palabra_original):
 
 def run():
     x = palabra_aleatoria()
-    y = imp_pal_oculta(x)
-    while "_" in list(y) :
+    y = list(imp_pal_oculta(x))
+    while "_" in y:
         verificar_letra(x)
 
 
