@@ -22,12 +22,14 @@ def palabra_aleatoria():
 # Una función para mostrar la palabra oculta, con cada letra representada por un guión bajo
 
 
-def imp_pal_oculta(pala1):
-    guiones =  []
-    for i in range (len(pala1)):
-        guiones.append("_")
-    return guiones
-        
+def mostrar_palabra_oculta(palabra, letras_adivinadas):
+    resultado = ''
+    for letra in palabra:
+        if letra in letras_adivinadas:
+            resultado += letra + ' '
+        else:
+            resultado += '_ '
+    return resultado
 
 
 # Una función para pedir al usuario que adivine una letra
@@ -40,17 +42,12 @@ def adivina_la_letra():
 
 # Una función para verificar si la letra adivinada está en la palabra oculta y actualizar la palabra oculta con la letra adivinada si es el caso
 
-def verificar_letra(palabrita,palabra_original):
-    palabrita = list(palabrita)
-    palabra_original = list(palabra_original)
-    caracter = adivina_la_letra()
-    if caracter in palabra_original:
-        ind = palabra_original.index(caracter)
-        palabrita[ind] = caracter
-        print("has adivinado la letra {caracter}")
-        return palabrita
-    else: 
-        print("La letra {caracter} no está en la palabra")
+def comprobar_letra(letra, palabra, letras_adivinadas):
+    if letra in palabra:
+        letras_adivinadas.append(letra)
+        return True
+    else:
+        return False
 
 
 # Una función para dibujar una parte del cuerpo del ahorcado cada vez que el usuario adivina una letra incorrecta
